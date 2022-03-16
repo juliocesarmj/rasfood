@@ -1,14 +1,12 @@
 package br.com.juliomoraes.restaurante.entity;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "pratos")
-public class Prato implements Serializable {
-    private static final long serialVersionUID = -3840230278529270634L;
+public class Prato {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
